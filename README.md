@@ -204,7 +204,7 @@ Clasifica los productos según diferentes niveles de riesgo (High, Medium y Low)
 
 Esta clasificación permite priorizar acciones y focalizar los esfuerzos en aquellos productos con mayor probabilidad de generar incidencias operativas o costes innecesarios.
 
-![Inventory Optimization](images_inventory.png)
+![Inventory Optimization](images/inventory.png)
 
 
 
