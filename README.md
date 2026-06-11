@@ -1,7 +1,5 @@
 # Supply Chain Control Tower
 
-# Supply Chain Control Tower
-
 ## Descripción del Proyecto
 
 La gestión de una cadena de suministro implica coordinar múltiples áreas que están estrechamente relacionadas entre sí. Decisiones relacionadas con inventario, proveedores, almacenes o planificación de la demanda pueden tener un impacto directo en los costes operativos, la disponibilidad de producto y el nivel de servicio ofrecido al cliente.
