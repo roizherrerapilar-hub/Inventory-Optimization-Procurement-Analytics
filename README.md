@@ -8,7 +8,7 @@ En muchas ocasiones, la información necesaria para tomar decisiones se encuentr
 
 Para dar respuesta a este reto, se desarrolló una **Supply Chain Control Tower**, una solución analítica que integra información de inventario, proveedores, almacenes y demanda en una única plataforma, permitiendo monitorizar indicadores clave y facilitar la toma de decisiones basada en datos.
 
----
+
 
 ## Objetivo del Proyecto
 
@@ -23,7 +23,7 @@ Los objetivos específicos fueron:
 * Detectar riesgos y oportunidades de optimización.
 * Facilitar la toma de decisiones mediante indicadores accionables.
 
----
+
 
 ## Preguntas de Negocio
 
@@ -53,7 +53,7 @@ El proyecto se desarrolló para responder a las siguientes preguntas:
 * ¿Cuál es el nivel de precisión de nuestras previsiones?
 * ¿Qué impacto tienen las promociones sobre la demanda?
 
----
+
 
 ## Dataset
 
@@ -88,7 +88,7 @@ El dataset utilizado simula un entorno real de Supply Chain e integra informaci�
 
 Esta combinación de variables permitió analizar la cadena de suministro desde una perspectiva integrada y desarrollar indicadores orientados a la toma de decisiones.
 
----
+
 
 ## Metodología
 
@@ -132,7 +132,7 @@ Finalmente, se desarrolló una solución interactiva en Power BI utilizando:
 * Navegación entre páginas.
 * Filtros dinámicos.
 
----
+
 
 ## KPIs Analizados
 
@@ -164,7 +164,7 @@ Evalúa el grado de precisión de las previsiones de demanda comparando la deman
 
 Mide la desviación existente entre la demanda prevista y la demanda real. Este indicador permite identificar áreas de mejora en los procesos de planificación.
 
----
+
 
 ## Dashboard
 
@@ -174,28 +174,28 @@ La solución se estructuró en cinco áreas principales de análisis.
 
 Vista ejecutiva que reúne los principales indicadores de rendimiento de la cadena de suministro y proporciona una visión global de la operación.
 
-![Overview](images_overview.png)
+![Overview](images/overview.png)
 
 
 ### Supplier Analysis
 
 Permite evaluar el rendimiento de los proveedores mediante métricas como Procurement Spend, Lead Time y Replenishments, facilitando la identificación de proveedores estratégicos y posibles riesgos operativos.
 
-![Supplier Analysis](images_supplier.png)
+![Supplier Analysis](images/supplier.png)
 
 
 ### Warehouse Analysis
 
 Analiza la situación de los almacenes mediante indicadores de cobertura, valor de inventario y distribución del stock, permitiendo identificar almacenes que requieren seguimiento.
 
-![Warehouse Analysis](images_warehouse.png)
+![Warehouse Analysis](images/warehouse.png)
 
 
 ### Demand & Forecast Analysis
 
 Evalúa la calidad de las previsiones mediante Forecast Accuracy y Forecast Error, así como la relación entre demanda prevista y demanda real.
 
-![Demand Forecast](images_demand_forecast.png)
+![Demand Forecast](images/demand_forecast.png)
 
 
 ### Inventory Optimization
@@ -206,7 +206,7 @@ Esta clasificación permite priorizar acciones y focalizar los esfuerzos en aque
 
 ![Inventory Optimization](images_inventory.png)
 
----
+
 
 ### Funcionalidades Interactivas
 
@@ -219,7 +219,7 @@ El dashboard incorpora:
 * Cross-filtering entre visualizaciones.
 * Exploración dinámica de indicadores.
 
----
+
 
 ## Tecnologías Utilizadas
 
@@ -243,7 +243,7 @@ El dashboard incorpora:
 * Matplotlib
 * Seaborn
 
----
+
 
 ## Observaciones
 
@@ -253,7 +253,7 @@ El dashboard incorpora:
 * Una parte significativa de los SKUs fue clasificada como High Risk, lo que pone de manifiesto oportunidades para revisar estrategias de inventario y priorizar acciones sobre los productos más críticos.
 * La combinación de métricas de demanda, inventario, almacenes y proveedores proporciona una visión más completa de la operación y facilita la identificación temprana de riesgos.
 
----
+
 
 ## Conclusiones
 
@@ -261,7 +261,7 @@ Este proyecto demuestra cómo la integración de información procedente de dist
 
 La solución desarrollada proporciona visibilidad sobre inventario, proveedores, almacenes y demanda, permitiendo identificar riesgos, detectar oportunidades de mejora y facilitar una gestión más eficiente de la operación.
 
----
+
 
 ## Próximos Pasos
 
@@ -271,6 +271,6 @@ Aunque la integración se completó correctamente y los datos fueron incorporado
 
 Como evolución futura, esta integración podría utilizarse para analizar el impacto de las fluctuaciones de divisa, comparar costes entre mercados o incorporar una perspectiva financiera más completa a la toma de decisiones.
 
----
+
 
 
