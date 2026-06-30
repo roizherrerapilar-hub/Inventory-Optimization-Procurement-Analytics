@@ -1,5 +1,14 @@
 # Supply Chain Control Tower
 
+An end-to-end Business Intelligence solution that centralizes inventory, supplier, warehouse and demand data into a single dashboard, enabling data-driven supply chain decisions.
+
+![Overview](images/overview.png)
+**Interactive Power BI dashboard for inventory optimization, supplier performance, warehouse analysis and demand forecasting.**
+
+## Tech Stack
+
+**Python • SQL • Power BI • DAX • Power Query • Pandas • NumPy**
+
 ## Project Description
 
 Managing a supply chain requires coordinating multiple areas that are closely connected. Decisions related to inventory, suppliers, warehouses or demand planning can have a direct impact on operational costs, product availability and customer service.
