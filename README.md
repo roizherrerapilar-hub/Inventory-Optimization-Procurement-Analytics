@@ -1,275 +1,269 @@
 # Supply Chain Control Tower
 
-## Descripción del Proyecto
+## Project Description
 
-La gestión de una cadena de suministro implica coordinar múltiples áreas que están estrechamente relacionadas entre sí. Decisiones relacionadas con inventario, proveedores, almacenes o planificación de la demanda pueden tener un impacto directo en los costes operativos, la disponibilidad de producto y el nivel de servicio ofrecido al cliente.
+Managing a supply chain requires coordinating multiple areas that are closely connected. Decisions related to inventory, suppliers, warehouses or demand planning can have a direct impact on operational costs, product availability and customer service.
 
-En muchas ocasiones, la información necesaria para tomar decisiones se encuentra distribuida entre diferentes sistemas y reportes, dificultando la obtención de una visión global de la operación.
+In many organizations, the information required to make these decisions is spread across different systems and reports, making it difficult to gain a complete view of the operation.
 
-Para dar respuesta a este reto, se desarrolló una **Supply Chain Control Tower**, una solución analítica que integra información de inventario, proveedores, almacenes y demanda en una única plataforma, permitiendo monitorizar indicadores clave y facilitar la toma de decisiones basada en datos.
+To address this challenge, I developed a **Supply Chain Control Tower**, an analytical solution that brings together inventory, supplier, warehouse and demand data into a single platform, making it easier to monitor key business indicators and support data-driven decision making.
 
+---
 
+## Project Objective
 
-## Objetivo del Proyecto
+The goal of this project was to develop an end-to-end analytical solution capable of providing visibility across the main areas of the supply chain using Python, SQL and Power BI.
 
-Desarrollar una solución analítica end-to-end capaz de proporcionar visibilidad sobre las principales áreas de la cadena de suministro mediante el uso de Python, SQL y Power BI.
+The main objectives were to:
 
-Los objetivos específicos fueron:
+- Improve inventory visibility.
+- Analyse supplier performance.
+- Identify warehouses that require attention.
+- Evaluate demand forecast quality.
+- Detect risks and optimization opportunities.
+- Support decision making through actionable KPIs.
 
-* Mejorar la visibilidad del inventario.
-* Analizar el rendimiento de los proveedores.
-* Identificar almacenes que requieren atención.
-* Evaluar la calidad de las previsiones de demanda.
-* Detectar riesgos y oportunidades de optimización.
-* Facilitar la toma de decisiones mediante indicadores accionables.
+---
 
+## Business Questions
 
+This project was designed to answer the following business questions.
 
-## Preguntas de Negocio
+### Inventory
 
-El proyecto se desarrolló para responder a las siguientes preguntas:
+- Are inventory levels appropriate?
+- Which products present the highest operational risk?
+- Are there opportunities to optimize inventory?
 
-### Inventario
+### Suppliers
 
-* ¿Tenemos niveles adecuados de inventario?
-* ¿Qué productos presentan mayor riesgo operativo?
-* ¿Existen oportunidades para optimizar el stock?
+- Which suppliers have the greatest financial impact?
+- Are there significant differences in supplier lead times?
+- Which suppliers require closer monitoring?
 
-### Proveedores
+### Warehouses
 
-* ¿Qué proveedores generan mayor impacto económico?
-* ¿Existen diferencias significativas en los tiempos de entrega?
-* ¿Qué proveedores requieren seguimiento?
+- Which warehouses require attention?
+- How is inventory distributed across warehouses?
+- Are there significant differences in inventory coverage and stock value?
 
-### Almacenes
+### Demand
 
-* ¿Qué almacenes requieren revisión?
-* ¿Cómo se distribuye el inventario entre almacenes?
-* ¿Existen diferencias relevantes en cobertura y valor de stock?
+- Are we planning demand accurately?
+- How accurate are our demand forecasts?
+- What impact do promotions have on demand?
 
-### Demanda
-
-* ¿Estamos planificando correctamente la demanda?
-* ¿Cuál es el nivel de precisión de nuestras previsiones?
-* ¿Qué impacto tienen las promociones sobre la demanda?
-
-
+---
 
 ## Dataset
 
-El dataset utilizado simula un entorno real de Supply Chain e integra información procedente de diferentes procesos operativos.
+The dataset simulates a real Supply Chain environment and combines information from different operational processes.
 
-### Inventario
+### Inventory
 
-* SKU
-* Inventory Level
-* Inventory Value
-* Inventory Coverage
-* Stock Allocation
+- SKU
+- Inventory Level
+- Inventory Value
+- Inventory Coverage
+- Stock Allocation
 
-### Proveedores
+### Suppliers
 
-* Supplier
-* Lead Time
-* Procurement Spend
-* Replenishments
+- Supplier
+- Lead Time
+- Procurement Spend
+- Replenishments
 
-### Almacenes
+### Warehouses
 
-* Warehouse
-* Inventory Distribution
-* Inventory Allocation
+- Warehouse
+- Inventory Distribution
+- Inventory Allocation
 
-### Demanda
+### Demand
 
-* Actual Demand
-* Forecast Demand
-* Promotion Impact
+- Actual Demand
+- Forecast Demand
+- Promotion Impact
 
-Esta combinación de variables permitió analizar la cadena de suministro desde una perspectiva integrada y desarrollar indicadores orientados a la toma de decisiones.
+This combination of variables made it possible to analyse the supply chain from an integrated perspective and build business-oriented KPIs.
 
+---
 
+## Methodology
 
-## Metodología
+The project followed a structured analytical approach.
 
-El proyecto se desarrolló siguiendo un enfoque analítico estructurado:
+### 1. Data Exploration
 
-### 1. Exploración y comprensión de datos
+An exploratory analysis was carried out to understand the dataset structure, identify relevant variables and detect potential inconsistencies.
 
-Se realizó un análisis exploratorio para comprender la estructura del dataset, identificar variables relevantes y detectar posibles inconsistencias.
+### 2. Data Cleaning & Transformation
 
-### 2. Limpieza y transformación de datos
+Python was used to perform several data preparation tasks, including:
 
-Mediante Python se llevaron a cabo tareas de:
+- Data cleaning.
+- Data type conversion.
+- Missing value treatment.
+- Creation of derived metrics.
+- Data preparation for further analysis.
 
-* Limpieza de datos.
-* Conversión de tipos de variables.
-* Tratamiento de valores nulos.
-* Creación de métricas derivadas.
-* Preparación de la información para su análisis posterior.
+### 3. SQL Analysis
 
-### 3. Análisis mediante SQL
+SQL was used to:
 
-Se empleó SQL para:
+- Aggregate business information.
+- Analyse supplier performance.
+- Evaluate warehouse performance.
+- Calculate inventory and demand metrics.
 
-* Agrupar información.
-* Analizar métricas por proveedor.
-* Evaluar el rendimiento de almacenes.
-* Calcular indicadores de demanda e inventario.
+### 4. KPI Definition
 
-### 4. Definición de KPIs
+A set of business KPIs was designed to monitor operational performance.
 
-Se diseñaron indicadores específicos para monitorizar el rendimiento de la operación.
+### 5. Dashboard Development
 
-### 5. Desarrollo del Dashboard
+Finally, an interactive Power BI dashboard was developed using:
 
-Finalmente, se desarrolló una solución interactiva en Power BI utilizando:
+- Power Query
+- Data Modelling
+- DAX
+- Interactive visualizations
+- Page navigation
+- Dynamic filters
 
-* Power Query.
-* Modelado de datos.
-* DAX.
-* Visualizaciones interactivas.
-* Navegación entre páginas.
-* Filtros dinámicos.
+---
 
-
-
-## KPIs Analizados
+## Key KPIs
 
 ### Inventory Value
 
-Representa el valor económico total del inventario disponible. Permite conocer el capital inmovilizado en stock y evaluar el impacto financiero asociado a la gestión del inventario.
+Represents the total financial value of the available inventory. It provides visibility into the capital tied up in stock and its financial impact.
 
 ### Inventory Coverage
 
-Indica el número de días que la demanda puede cubrirse utilizando el inventario actual. Es una métrica clave para identificar riesgos de rotura de stock o situaciones de sobreinventario.
+Measures how many days current inventory can cover expected demand. It helps identify both stockout risks and overstock situations.
 
 ### Procurement Spend
 
-Representa el gasto total destinado a compras y aprovisionamiento. Permite monitorizar el impacto económico de los proveedores y analizar oportunidades de optimización de costes.
+Represents the total amount spent on procurement activities. It helps evaluate supplier impact and identify cost optimization opportunities.
 
 ### Supplier Lead Time
 
-Mide el tiempo medio que tarda un proveedor en entregar un pedido desde que se realiza la solicitud. Es un indicador fundamental para la planificación de compras y la disponibilidad de producto.
+Measures the average time required for a supplier to deliver an order after it has been placed. It is a key indicator for procurement planning and product availability.
 
 ### Replenishments
 
-Mide el número de reposiciones realizadas para mantener los niveles de inventario. Este KPI ayuda a comprender la frecuencia de abastecimiento y el comportamiento del stock dentro de la cadena de suministro.
+Measures the number of replenishment activities carried out to maintain inventory levels. This KPI provides insight into replenishment frequency and inventory behaviour.
 
 ### Forecast Accuracy
 
-Evalúa el grado de precisión de las previsiones de demanda comparando la demanda prevista con la demanda real. Una mayor precisión permite optimizar la planificación, reducir costes y mejorar el nivel de servicio.
+Measures how closely forecast demand matches actual demand. Higher forecast accuracy contributes to better planning, lower costs and improved service levels.
 
 ### Forecast Error
 
-Mide la desviación existente entre la demanda prevista y la demanda real. Este indicador permite identificar áreas de mejora en los procesos de planificación.
+Measures the deviation between forecast demand and actual demand, helping identify opportunities to improve the forecasting process.
 
-
+---
 
 ## Dashboard
 
-La solución se estructuró en cinco áreas principales de análisis.
+The dashboard is organised into five main analytical sections.
 
 ### Overview
 
-Vista ejecutiva que reúne los principales indicadores de rendimiento de la cadena de suministro y proporciona una visión global de la operación.
+Provides an executive summary of the supply chain through the most relevant operational KPIs.
 
 ![Overview](images/overview.png)
 
-
 ### Supplier Analysis
 
-Permite evaluar el rendimiento de los proveedores mediante métricas como Procurement Spend, Lead Time y Replenishments, facilitando la identificación de proveedores estratégicos y posibles riesgos operativos.
+Evaluates supplier performance using Procurement Spend, Lead Time and Replenishments, helping identify strategic suppliers and potential operational risks.
 
 ![Supplier Analysis](images/supplier.png)
 
-
 ### Warehouse Analysis
 
-Analiza la situación de los almacenes mediante indicadores de cobertura, valor de inventario y distribución del stock, permitiendo identificar almacenes que requieren seguimiento.
+Analyses warehouse performance through inventory coverage, stock value and inventory distribution, making it easier to identify warehouses that require attention.
 
 ![Warehouse Analysis](images/warehouse.png)
 
-
 ### Demand & Forecast Analysis
 
-Evalúa la calidad de las previsiones mediante Forecast Accuracy y Forecast Error, así como la relación entre demanda prevista y demanda real.
+Evaluates forecast quality through Forecast Accuracy and Forecast Error while comparing forecast demand with actual demand.
 
 ![Demand Forecast](images/demand_forecast.png)
 
-
 ### Inventory Optimization
 
-Clasifica los productos según diferentes niveles de riesgo (High, Medium y Low) utilizando criterios relacionados con cobertura, demanda y comportamiento del stock.
+Classifies products into High, Medium and Low Risk categories based on inventory coverage, demand and inventory behaviour.
 
-Esta clasificación permite priorizar acciones y focalizar los esfuerzos en aquellos productos con mayor probabilidad de generar incidencias operativas o costes innecesarios.
+This helps prioritize actions and focus attention on products that are more likely to generate operational issues or unnecessary costs.
 
 ![Inventory Optimization](images/inventory.png)
 
+### Interactive Features
 
+The dashboard includes:
 
-### Funcionalidades Interactivas
+- Supplier filters
+- Warehouse filters
+- SKU filters
+- Page navigation
+- Cross-filtering between visuals
+- Interactive KPI exploration
 
-El dashboard incorpora:
+---
 
-* Filtros por proveedor.
-* Filtros por almacén.
-* Filtros por SKU.
-* Navegación entre páginas.
-* Cross-filtering entre visualizaciones.
-* Exploración dinámica de indicadores.
+## Technologies Used
 
+### Languages
 
+- Python
+- SQL
+- DAX
 
-## Tecnologías Utilizadas
+### Tools
 
-### Lenguajes
+- Power BI
+- Power Query
+- Jupyter Notebook
+- GitHub
 
-* Python
-* SQL
-* DAX
+### Libraries
 
-### Herramientas
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
 
-* Power BI
-* Power Query
-* Jupyter Notebook
-* GitHub
+---
 
-### Librerías
+## Key Insights
 
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
+- Demand planning achieved a Forecast Accuracy above 88%.
+- Several warehouses were identified as requiring attention due to their inventory coverage levels.
+- Significant differences were found in supplier lead times.
+- A considerable number of SKUs were classified as High Risk, highlighting opportunities to review inventory strategies and prioritize critical products.
+- Combining demand, inventory, warehouse and supplier metrics provides a more complete operational view and supports early risk identification.
 
+---
 
+## Conclusions
 
-## Observaciones
+This project demonstrates how integrating information from different areas of the supply chain can become a valuable decision-support tool.
 
-* La planificación de la demanda mostró niveles elevados de precisión, con un Forecast Accuracy superior al 88%.
-* Se identificaron almacenes que requieren seguimiento debido a sus niveles de cobertura.
-* Existen diferencias relevantes en los tiempos de entrega entre proveedores.
-* Una parte significativa de los SKUs fue clasificada como High Risk, lo que pone de manifiesto oportunidades para revisar estrategias de inventario y priorizar acciones sobre los productos más críticos.
-* La combinación de métricas de demanda, inventario, almacenes y proveedores proporciona una visión más completa de la operación y facilita la identificación temprana de riesgos.
+The solution provides visibility across inventory, suppliers, warehouses and demand, helping identify risks, uncover improvement opportunities and support more efficient operational management.
 
+---
 
+## Future Improvements
 
-## Conclusiones
+During the project, an exchange rate API was integrated to convert monetary values into euros and explore additional financial analysis within the supply chain.
 
-Este proyecto demuestra cómo la integración de información procedente de distintas áreas de la cadena de suministro puede transformarse en una herramienta útil para apoyar la toma de decisiones.
+Although the integration was completed successfully and incorporated into the data preparation process, it was ultimately excluded from the final dashboard in order to keep the focus on operational indicators related to inventory, suppliers, warehouses and demand.
 
-La solución desarrollada proporciona visibilidad sobre inventario, proveedores, almacenes y demanda, permitiendo identificar riesgos, detectar oportunidades de mejora y facilitar una gestión más eficiente de la operación.
-
-
-
-## Próximos Pasos
-
-Durante el desarrollo del proyecto se realizó la conexión con una API de tipos de cambio con el objetivo de convertir los valores monetarios a euros y explorar posibles análisis financieros dentro de la cadena de suministro.
-
-Aunque la integración se completó correctamente y los datos fueron incorporados al proceso de análisis, finalmente se decidió no incluir esta información en la versión final del dashboard para centrar el proyecto en los indicadores operativos de inventario, proveedores, almacenes y demanda.
-
-Como evolución futura, esta integración podría utilizarse para analizar el impacto de las fluctuaciones de divisa, comparar costes entre mercados o incorporar una perspectiva financiera más completa a la toma de decisiones.
+As a future enhancement, this integration could be used to analyse the impact of currency fluctuations, compare costs across different markets and provide a more comprehensive financial perspective for decision making.
 
 
 
