@@ -8,7 +8,7 @@ In many organizations, the information required to make these decisions is sprea
 
 To address this challenge, I developed a **Supply Chain Control Tower**, an analytical solution that brings together inventory, supplier, warehouse and demand data into a single platform, making it easier to monitor key business indicators and support data-driven decision making.
 
----
+
 
 ## Project Objective
 
@@ -23,7 +23,7 @@ The main objectives were to:
 - Detect risks and optimization opportunities.
 - Support decision making through actionable KPIs.
 
----
+
 
 ## Business Questions
 
@@ -53,7 +53,7 @@ This project was designed to answer the following business questions.
 - How accurate are our demand forecasts?
 - What impact do promotions have on demand?
 
----
+
 
 ## Dataset
 
@@ -88,7 +88,7 @@ The dataset simulates a real Supply Chain environment and combines information f
 
 This combination of variables made it possible to analyse the supply chain from an integrated perspective and build business-oriented KPIs.
 
----
+
 
 ## Methodology
 
@@ -132,7 +132,7 @@ Finally, an interactive Power BI dashboard was developed using:
 - Page navigation
 - Dynamic filters
 
----
+
 
 ## Key KPIs
 
@@ -164,7 +164,7 @@ Measures how closely forecast demand matches actual demand. Higher forecast accu
 
 Measures the deviation between forecast demand and actual demand, helping identify opportunities to improve the forecasting process.
 
----
+
 
 ## Dashboard
 
@@ -213,7 +213,7 @@ The dashboard includes:
 - Cross-filtering between visuals
 - Interactive KPI exploration
 
----
+
 
 ## Technologies Used
 
@@ -237,7 +237,7 @@ The dashboard includes:
 - Matplotlib
 - Seaborn
 
----
+
 
 ## Key Insights
 
@@ -247,7 +247,7 @@ The dashboard includes:
 - A considerable number of SKUs were classified as High Risk, highlighting opportunities to review inventory strategies and prioritize critical products.
 - Combining demand, inventory, warehouse and supplier metrics provides a more complete operational view and supports early risk identification.
 
----
+
 
 ## Conclusions
 
@@ -255,7 +255,7 @@ This project demonstrates how integrating information from different areas of th
 
 The solution provides visibility across inventory, suppliers, warehouses and demand, helping identify risks, uncover improvement opportunities and support more efficient operational management.
 
----
+
 
 ## Future Improvements
 
